@@ -28,5 +28,5 @@ def test_login_con_mock():
     mock_auth = AuthService()
     mock_auth.usuarios = {"testuser": "testpass"}  # Simula datos en la "BD"
     
-    # assert mock_auth.login("testuser", "testpass") == "Login exitoso"
+    assert mock_auth.login("testuser", "testpass") == "Login exitoso"
     # assert mock_auth.login("testuser", "wrong") == "Credenciales incorrectas"
