@@ -16,7 +16,8 @@ def auth_service():
         ("user", "password", "Login exitoso"),  # ✅ Otro usuario válido
         ("admin", "wrongpass", "Credenciales incorrectas"),  # ❌ Contraseña incorrecta
         ("unknown", "1234", "Credenciales incorrectas"),  # ❌ Usuario inexistente
-        ("unknown", "12342", "Credenciales incorrectas"),  # ❌ Usuario inexistente
+        ("unknown", "12342", "Credenciales incorrectass"),
+        ("anonymous", "1111", "Login exitoso"),# ❌ Usuario inexistente
     ],
 )
 def test_login(auth_service, usuario, contraseña, esperado):
