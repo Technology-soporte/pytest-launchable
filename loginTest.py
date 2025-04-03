@@ -1,4 +1,5 @@
 import pytest
+import time
 from auth import AuthService
 from unittest.mock import MagicMock
 
@@ -19,6 +20,7 @@ def auth_service():
     ],
 )
 def test_login(auth_service, usuario, contraseña, esperado):
+    time.sleep(2)
     assert auth_service.login(usuario, contraseña) == esperado
 
 # 📌 MOCK: Simula una base de datos externa
